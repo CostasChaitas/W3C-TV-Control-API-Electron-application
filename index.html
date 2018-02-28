@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>FOKUS-TV</title>
+  <!-- CSS-->
+  <link rel="stylesheet" href="offline/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/loader.css">
+</head>
+
+<body>
+  <div class="window-margin">
+   <div class="window">
+
+    <aside class="sidebar">
+     <div class="top-bar">
+      <p class="logo">FOKUS-TV</p>
+    </div>
+
+    <menu class="menu">
+      <p class="menu-name">Channels</p>
+      <ul class="channels">
+       <li>
+        <a href="#">Favorites</a>
+        <ul>
+         <li><a href="#" id='769' onclick="changeChannel('769');">Das Erste HD</a></li>
+         <li><a href="#" id='945' onclick="changeChannel('945');">rbb Berlin HD</a></li>
+         <li><a href="#" id='897' onclick="changeChannel('897');">NDR FS NDS HD</a></li>
+       </ul>
+     </li>
+     <li class="active"><a href="#">All channels</a>
+       <ul>
+         <li><a href="#" id='769' onclick="changeChannel('769');">Das Erste HD</a></li>
+         <li><a href="#" id='772' onclick="changeChannel('772');">tagesschau24 HD</a></li>
+         <li><a href="#" id='865' onclick="changeChannel('865');">MDR Sachsen HD</a></li>
+         <li><a href="#" id='897' onclick="changeChannel('897');">NDR FS NDS HD</a></li>
+         <li><a href="#" id='945' onclick="changeChannel('945');">rbb Berlin HD</a></li>
+         <li><a href="#" id='946' onclick="changeChannel('946');">rbb Brandenburg HD</a></li>
+         <li><a href="#" id='993' onclick="changeChannel('993');">SWR BW HD</a></li>
+	 <div class="separator"></div>
+         <li><a href="#" id='2001' onclick="changeChannel('2001');">ZDF HD</a></li>
+         <li><a href="#" id='2002' onclick="changeChannel('2002');">ZDFinfo HD</a></li>
+         <li><a href="#" id='2003' onclick="changeChannel('2003');">zdf_neo HD</a></li>
+         <li><a href="#" id='2004' onclick="changeChannel('2004');">3sat HD</a></li>
+         <li><a href="#" id='2005' onclick="changeChannel('2005');">KiKA HD</a></li>
+         <div class="separator"></div>
+         <li><a href="#" id='16960' onclick="changeChannel('16960');">Disney Channel HD</a></li>
+         <li><a href="#" id='0' onclick="changeChannel('0');">Noch 8 weitere auf Freq</a></li>
+         <!-- Prevent to cut off channel list -->
+         <div class="dummy"></div>
+       </ul>
+     </li>
+   </ul>
+ </menu>
+</aside>
+
+
+
+<div class="main" role="main">
+  <div class="top-bar">
+    <ul class="top-menu">
+     <li class="menu-icon trigger-sidebar-toggle">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </li>
+    <li><a onclick="change_tab(this)" id="tab_0" href="tab_0" class="open_tab">Television</a></li>
+    <li><a onclick="change_tab(this)" id="tab_1" href="tab_1">EPG</a></li>
+    <li><a onclick="change_tab(this)" id="tab_2" href="tab_2">Settings</a></li>
+  </ul>
+</div>
+
+<!-- CONTENT -->
+<div class="panel_space">
+
+  <!-- TELEVISION -->
+  <div class="closed_panel" id="panel_0">
+
+  <div id ="channelSelected_TV" style="display:none;">
+    <video autoplay>
+      <source type="video/mp4" />
+    </video>
+  </div>
+
+    <div id="noChannelSelected_TV">
+      <p id="bigText"> Please select a channel in the sidebar on the left</p>
+    </div>
+
+  </div>
+
+  <!--EPG -->
+  <div class="closed_panel" id="panel_1">
+    <div id="channelSelected_EPG" style="display:none;">
+      <p id="channel_name"> Channel name</p>
+      <br>
+      <p id="middleText"> Current Program </p>
+      <p id="current_program"> </p>
+      <br>
+      <p id="middleText"> Whole Program </p>
+      <p id="whole_program"> </p>
+    </div>
+    <div id="noChannelSelected_EPG">
+    <p id="bigText"> Please select a channel in the sidebar on the left</p>
+    </div>
+
+    <!-- Loader animation -->
+    <div class="loader" style="display:none;">
+      <div class="stick"></div>
+      <div class="stick"></div>
+      <div class="stick"></div>
+      <div class="stick"></div>
+      <div class="stick"></div>
+      <div class="stick"></div>
+
+      <h1 id="loadingText" >Loading EPG...</h1>
+    </div>
+  </div>
+
+  <!--SETTINGS -->
+  <div class="closed_panel" id="panel_2">
+    <p id="settingsText">Select your desired output resolution</p>
+    <p id="currentResolution"> Your current resolution is: </p>
+    <div class="select-resolution">
+      <select id ="resolutions">
+        <option value="720x480">720x480(480p)</option>
+        <option value="1920x1080">1920x1080(1080p)</option>
+      </select>
+    </div>
+    <br/>
+    <button class="saveButton" onclick="saveResolution()">Save resolution!</button>
+  </div>
+</div>
+
+<!-- CONTENT END -->
+</div>
+
+</div>
+</div>
+
+<script src='offline/jquery-3.1.1.min.js'></script>
+<script src="js/index.js"></script>
+
+</body>
+</html>

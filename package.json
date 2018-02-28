@@ -1,0 +1,23 @@
+{
+  "name": "Web-TV",
+  "productName": "Web-TV",
+  "description": "Web-TV application using the node-tuner module",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "dvbtee": "^0.1.17",
+    "electron": "^1.6.1",
+    "jQuery": "^1.7.4",
+    "node-tuner": "*",
+    "promise": "^7.1.1",
+    "sessionstorage": "0.0.2",
+    "when": "^3.7.7"
+  },
+  "devDependencies": {
+    "electron": "^1.6.1",
+    "electron-packager": "^8.5.1",
+    "electron-rebuild": "^1.4.0"
+  }
+}

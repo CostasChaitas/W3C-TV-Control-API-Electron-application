@@ -1,0 +1,82 @@
+{
+  "channels": [
+    {
+    "name": "Das Erste HD",
+    "serviceId": "769",
+    "frequency": 506000000,
+    "delsys": 16
+    },
+    {
+    "name": "tagesschau24 HD",
+    "serviceId": "772",
+    "frequency": 506000000,
+    "delsys": 16
+    },
+    {
+    "name": "MDR Sachsen HD",
+    "serviceId": "865",
+    "frequency": 506000000,
+    "delsys": 16
+    },
+    {
+    "name": "NDR FS NDS HD",
+    "serviceId": "897",
+    "frequency": 506000000,
+    "delsys": 16
+    },
+    {
+    "name": "rbb Berlin HD",
+    "serviceId": "945",
+    "frequency": 506000000,
+    "delsys": 16
+    },
+    {
+    "name": "rbb Brandenburg HD",
+    "serviceId": "946",
+    "frequency": 506000000,
+    "delsys": 16
+    },
+    {
+    "name": "SWR BW HD",
+    "serviceId": "993",
+    "frequency": 506000000,
+    "delsys": 16
+    },
+    {
+    "name": "ZDF HD",
+    "serviceId": "2001",
+    "frequency": 570000000,
+    "delsys": 16
+    },
+    {
+    "name": "ZDFinfo HD",
+    "serviceId": "2002",
+    "frequency": 570000000,
+    "delsys": 16
+    },
+    {
+    "name": "zdf_neo HD",
+    "serviceId": "2003",
+    "frequency": 570000000,
+    "delsys": 16
+    },
+    {
+    "name": "3sat HD",
+    "serviceId": "2004",
+    "frequency": 570000000,
+    "delsys": 16
+    },
+    {
+    "name": "KiKA HD",
+    "serviceId": "2005",
+    "frequency": 570000000,
+    "delsys": 16
+    },
+    {
+    "name": "Disney Channel HD",
+    "serviceId": "16968",
+    "frequency": 626000000,
+    "delsys": 16
+    }    
+  ]
+}
