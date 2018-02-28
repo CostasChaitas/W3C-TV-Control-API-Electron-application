@@ -11,7 +11,6 @@ This will ensure every process will be closed properly and you don't lock the dv
 
 Clone the branch
 
-    git clone https://gitlab.fokus.fraunhofer.de/theses/awt-tv-web-app.git
     
 Install the latest version of Node.js (v7)
 
